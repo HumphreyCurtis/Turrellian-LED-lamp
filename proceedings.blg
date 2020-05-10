@@ -1,0 +1,124 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: proceedings.aux
+The style file: SIGCHI-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sample.bib
+Warning--entry type for "Phillips01" isn't style-file defined
+--line 732 of file sample.bib
+Warning--entry type for "Lumie01" isn't style-file defined
+--line 741 of file sample.bib
+Warning--entry type for "Dodow01" isn't style-file defined
+--line 750 of file sample.bib
+Warning--entry type for "Green01" isn't style-file defined
+--line 759 of file sample.bib
+Warning--entry type for "Dyson01" isn't style-file defined
+--line 768 of file sample.bib
+Repeated entry---line 777 of file sample.bib
+ : @online{Phillips01
+ :                   ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "Nanoleaf01" isn't style-file defined
+--line 786 of file sample.bib
+Warning--entry type for "Reflectly01" isn't style-file defined
+--line 795 of file sample.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty address in adcock1990james
+Warning--empty publisher in afzal2009perception
+Warning--empty address in afzal2009perception
+Warning--empty address in biggam2006progress
+Warning--empty publisher in chaspari2014emotion
+Warning--empty address in chaspari2014emotion
+Warning--empty address in colombetti2014feeling
+Warning--no journal in colombetti2008feeling
+Warning--no number and no volume in colombetti2008feeling
+Warning--page numbers missing in both pages and numpages fields in colombetti2008feeling
+Warning--no number and no volume in davletcharova2015detection
+Warning--page numbers missing in both pages and numpages fields in davletcharova2015detection
+Warning--empty publisher in de2013predicting
+Warning--empty address in de2013predicting
+Warning--page numbers missing in both pages and numpages fields in de2013predicting
+Warning--empty address in ekman2006darwin
+Warning--no journal in fitriani2007multimodal
+Warning--no number and no volume in fitriani2007multimodal
+Warning--page numbers missing in both pages and numpages fields in fitriani2007multimodal
+Warning--empty publisher in flores2017effect
+Warning--empty address in flores2017effect
+Warning--page numbers missing in both pages and numpages fields in flores2017effect
+Warning--empty address in hurford2009types
+Warning--no number and no volume in hylton2013james
+Warning--page numbers missing in both pages and numpages fields in hylton2013james
+Warning--no journal in james1922emotions
+Warning--no number and no volume in james1922emotions
+Warning--page numbers missing in both pages and numpages fields in james1922emotions
+Warning--no journal in james1994physical
+Warning--no number and no volume in james1994physical
+Warning--page numbers missing in both pages and numpages fields in james1994physical
+Warning--empty publisher in ju2015smart
+Warning--empty address in ju2015smart
+Warning--empty publisher in kathiresan2019cepstral
+Warning--empty address in kathiresan2019cepstral
+Warning--no journal in keltner2003facial
+Warning--no number and no volume in keltner2003facial
+Warning--page numbers missing in both pages and numpages fields in keltner2003facial
+Warning--no number and no volume in kim2015acceptance
+Warning--page numbers missing in both pages and numpages fields in kim2015acceptance
+Warning--empty publisher in kuijsters2011improving
+Warning--empty address in kuijsters2011improving
+Warning--page numbers missing in both pages and numpages fields in kuijsters2015lighting
+Warning--empty address in lee2019effects
+Warning--empty address in marechal2019survey
+Warning--no number and no volume in piana2014real
+Warning--page numbers missing in both pages and numpages fields in piana2014real
+Warning--empty address in prinz2004gut
+Warning--empty publisher in sharma2019automated
+Warning--empty address in sharma2019automated
+Warning--empty publisher in 5771346
+Warning--empty address in 5771346
+Warning--no number and no volume in sterelny2004externalism
+Warning--empty address in tian2005facial
+Warning--empty publisher in trigeorgis2016adieu
+Warning--empty address in trigeorgis2016adieu
+You've used 72 entries,
+            5283 wiz_defined-function locations,
+            1623 strings with 27424 characters,
+and the built_in function-call counts, 69569 in all, are:
+= -- 10094
+> -- 2149
+< -- 1
++ -- 668
+- -- 1126
+* -- 4340
+:= -- 7146
+add.period$ -- 370
+call.type$ -- 72
+change.case$ -- 486
+chr.to.int$ -- 70
+cite$ -- 128
+duplicate$ -- 5398
+empty$ -- 3868
+format.name$ -- 907
+if$ -- 17436
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 245
+newline$ -- 542
+num.names$ -- 430
+pop$ -- 2131
+preamble$ -- 1
+purify$ -- 772
+quote$ -- 0
+skip$ -- 1496
+stack$ -- 0
+substring$ -- 6311
+swap$ -- 531
+text.length$ -- 730
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 624
+warning$ -- 56
+while$ -- 466
+width$ -- 0
+write$ -- 972
+(There was 1 error message)
