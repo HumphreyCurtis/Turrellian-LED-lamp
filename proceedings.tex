@@ -62,7 +62,10 @@
 \usepackage{afterpage}
 \usepackage{capt-of}
 
-\usepackage{pgfgantt,ragged2e}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+
+\definecolor{barblue}{RGB}{153,204,254}
 
 
 % Some optional stuff you might like/need.
@@ -164,15 +167,8 @@
 
 \maketitle
 
-\begin{abstract}
-  This sample paper describes the formatting
-  requirements for SIGCHI conference proceedings, and offers
-  recommendations on writing for the worldwide SIGCHI
-  readership. Please review this document even if you have submitted
-  to SIGCHI conferences before, as some format details have changed
-  relative to previous years. Abstracts should be about 150 words and
-  are required.
-\end{abstract}
+\section{Executive Summary}
+This paper offers insights from building and user experience (UX) testing an affect-enhanced RGB LED lamp, which utilises tightly synchronised body sensors and a self-journaling application to gauge users’ affective signals. The RGB LED lamp fundamentally differs from other smart-lighting IoT devices because it is the first device to be tethered to users’ affective state and designed to offer mood enhancement utilising research from colour psychologists Valdez et al. Inspired by the work of light-scape artist James Turrell, the LED lamp is designed to bridge the gap between mindful applications and smart lighting systems – improving users’ day-to-day quality of life. Additionally, this device will also contribute to academic research within multimodal affect-sensitive computing. Emotional intelligence is a facet of human intelligence that has been argued to be indispensable and perhaps most important for successful interpersonal social interaction. A wide variety of cues have been used by MHCI researchers to determine user’s emotion such as facial expression, body movements, vocal expressions and physiological reactions. However, this proposal offers strong support and insights for embodied and physiological approaches towards affect-sensing systems and multimodal device design.
 
 
 % ACM Classfication
@@ -230,7 +226,7 @@ Computing technologies will increasingly embed themselves into the fabric of our
 
 \subsection{Motivation}
 
-Since Nijholt’s paper in 2008, affective computing has experienced much research interest – particularly developing affect-sensitive multimodal computer interfaces and operating systems~\cite{pantic2008human}~\cite{5771346}. Yet, subsequently, MHCI researcher’s emotion recognition methodologies have differed greatly (see figure ?). Consequently, at present, MHCI affective-computing research has not reached consensus in multiple areas. This paper will develop a Turrellian RGB LED lamp designed to improve user’s mood in order to add to the debate and provide insights for future affective computing research. Therefore, this paper has two key motivations. Firstly, to design, engineer and evaluate an affect-enhanced RGB LED lamp for user experience (UX) testing. Secondly, to utilise the devices’ findings to provide further research into developing successful multi-modal affect-sensitive systems.
+Since Nijholt’s paper in 2008, affective computing has experienced much research interest – particularly developing affect-sensitive multimodal computer interfaces and operating systems~\cite{pantic2008human}~\cite{5771346}. Yet, subsequently, MHCI researcher’s emotion recognition methodologies have differed greatly (see Literature Review). Consequently, at present, MHCI affective-computing research has not reached consensus in multiple areas. This paper will develop a Turrellian RGB LED lamp designed to improve user’s mood in order to add to the debate and provide insights for future affective computing research. Therefore, this paper has two key motivations. Firstly, to design, engineer and evaluate an affect-enhanced RGB LED lamp for UX testing. Secondly, to utilise the devices’ findings to provide further research into developing successful multi-modal affect-sensitive systems.
 
 Computer markets have seen several light devices for example, the Phillips Energy Up~\cite{Phillips01}, Lumie Bodyclock~\cite{Lumie01} and Dodow~\cite{Dodow01} created to treat ailments such as seasonal affective disorder (SAD), sleep disorders and even dementia. However, these devices are manually calibrated by their users or medical practitioners to treat a specific health problem and there is no concrete evidence of their effect on improving user’s mood. Consequently, at present there is no lighting device or computer system calibrated to improve overall mood, engender positive emotion, and work synonymously with its users’ affective state automatically. This is despite much having been written and established regarding the influence of lighting and coloured lighting on users’ moods and emotion~\cite{baron1992effects}~\cite{han2017effects}~\cite{jo2014smart}~\cite{kim2014study}~\cite{lee2019effects}~\cite{wardono2012effects}~\cite{yang2015lighting}. 
 
@@ -267,7 +263,7 @@ An oft-cited study by Valdez et al. found that colours had definitive effect on 
 
 Three commercial devices similar to the Turrellian RGB LED lamp include the Dyson Lightcycle~\cite{Dyson01}, Phillips Hue~\cite{Phillips01} and Nanoleaf light panels~\cite{Nanoleaf01}. Dyson’s LED Lightcycle auto-adjusts depending on age of user, tasks, senses motion and uses a 32-bit microprocessor to continually interpret daylight data to render the LED close to daylight colours~\cite{Dyson01}. Contrastingly, the most popular competitor device, the Phillips Hue is a line of colour changing 800 lumen LED lamps, strips and bulbs controlled wirelessly from Apps, vocally with Alexa or Google Assistant and configurable with iOS HomeKit~\cite{Phillips01}. Lastly, Nanoleaf Inc. are a diverse range of multicoloured LED light panels –integrable with assistant software and touch sensitive~\cite{Nanoleaf01}. 
 
-These IoT devices differ enormously in terms of specifications, pricing, and market share. At the time of writing, the Phillips Hue is by far the most popular and successful smart IoT LED light device with the range reporting yearly revenues of almost €600 million. The success of the Phillips Hue is potentially as a consequence of the breadth of its range and array of price points thus catering to a wide spectrum of potential customers in contrast to competitors~\cite{Phillips01}. Similarly, much like its competitors the Hue adjusts brightness based on time of day, can provide visual notification for users incoming Uber rides and can turn lights on with motion detection at predefined times – helping abate home burglaries~\cite{Phillips01}. 
+These IoT devices differ enormously in terms of specifications, pricing, and market share. At the time of writing, the Phillips Hue is by far the most popular and successful smart IoT LED light device with the range reporting yearly revenues of almost €600 million~\cite{}. The success of the Phillips Hue is potentially as a consequence of the breadth of its range and array of price points thus catering to a wide spectrum of potential customers in contrast to competitors~\cite{Phillips01}. Similarly, much like its competitors the Hue adjusts brightness based on time of day, can provide visual notification for users incoming Uber rides and can turn lights on with motion detection at predefined times – helping abate home burglaries~\cite{Phillips01}. 
 
 Although not part of a broader range of lighting products and a newcomer within lighting markets, the Dyson Lightcycle offers eponymous elegant and aesthetic design. Intriguingly unlike competitors, the Lightcycle fails to offer a wide spectrum of colours and instead sticks to white hues. Furthermore, the price point of the Lightcycle is quite high at RRP over £500~\cite{Dyson01}. Former Kickstarter start-up Nanoleaf offers an intriguing coloured range of LED light panels. Unlike the other devices, Nanoleaf light tiles can be built up into large displays offering the canvassing potential and portability for large commercial installations. Additionally, Nanoleaf differs from its commercial counterparts as an emerging start-up rather than large enterprise with a more niche subset of retail customers~\cite{Nanoleaf01}. In particular Nanoleaf is commonly used for backlighting purposes for game consoles or televisions~\cite{Nanoleaf01}.
 
@@ -327,7 +323,7 @@ Inspired by the phenomenological work of artist and architect Turrell another br
 
 \section{Proposed Approach}
 
-This section will sequentially discuss and evaluate this papers’ proposed approach to achieve the core objectives outlined earlier and milestones timelined in the 6-month gantt chart (outlined below in figure 3).
+This section will sequentially discuss and evaluate this papers’ proposed approach to achieve the core objectives outlined earlier and milestones timelined in the 6-month gantt chart (outlined on the landscape page below in figure 3).
 
 \section{Discussion of gantt chart}
 \subsection{RGB LED hardware development}
@@ -344,7 +340,7 @@ After hardware development, agile and intently user-focused software development
 
 Once the Turrellian RGB LED has been fully developed as outlined in the seven key steps noted in figure 3 – testing of the effectiveness of the device can commence. Resolution and data analysis collected for my two hypotheses will be evaluated and determined. A user-centric approach will be adopted in the testing of the device. Users will be aided through wiring physiological sensors and provided with ample time to self-journal their present affective state through the RGB LED GUI journal. Users will be given ample exposure to the RGB LED for at least twenty minutes.
 
-After the timed session, all physiological data will be saved – users will be notified of any significant physiological changes and provided with a feedback form and five-minute interview time for additional comments and thoughts. Maximum participant time will be 45 minutes. Participants will be provided with my personal contact details if they form any thoughts later upon further reflection.
+After the timed session, all physiological data will be saved – users will be notified of any significant physiological changes and provided with a feedback form and five-minute interview time for additional comments and thoughts. Maximum participant time will be thirty minutes. Participants will be provided with my personal contact details if they form any thoughts later upon further reflection.
 
 \subsection{Ethical considerations}
 
@@ -358,15 +354,108 @@ Formal experimentation will strictly involve adults over the age of eighteen and
 
 There is a widespread and useful variety of open source libraries and applications to perform analysis of physiological data collected. Open source API’s for IOTs and small-scale projects such as Thingspeak which utilises MATLAB and Simulink will prove invaluable for collecting and visualising data from the Turrellian RGB LED UX testing. To summarise and conclude, physiological data and textual input will be dually analysed for affective sentiment, which in turn will determine the colour rendered of the LED RGB light.
 
+\pagestyle{empty}
+\begin{landscape}
+    \begin{figure}
+    \centering
+\vspace*{-1cm}
+\hspace*{-3cm}
+        \begin{ganttchart}[%Specs
+            y unit title=0.4cm,
+            y unit chart=0.5cm,
+            canvas/.style={fill=none, draw=black, line width=.75pt},
+            vgrid,
+            title label anchor/.style={below=-1.6ex},
+            title left shift=.05,
+            title right shift=-.05,
+            title height=1,
+            title/.style={fill=none},
+            title label font=\bfseries,
+            bar/.style={fill=barblue},
+            incomplete/.style={fill=white},
+            progress label text={},
+            bar height=0.7,
+            group right shift=0,
+            group top shift=.6,
+            group height=.3,
+            group peaks height=.2]{1}{36}
+
+            %labels
+            \gantttitle{Six-month timeline and project milestones}{36}\\
+            \gantttitle{April}{6}
+            \gantttitle{May}{6}
+            \gantttitle{June}{6}
+            \gantttitle{July}{6}
+            \gantttitle{August}{6}
+            \gantttitle{September}{6}\\
+
+            % Parameter Selection
+            \ganttgroup{Research Proposal}{2}{9}\\ %elem0
+       	 \ganttmilestone{Business franchise for UX testing found}{3}\\
+            \ganttbar[progress=100]{Development}{2}{9}\\
+            \ganttbar[progress=90]{Hardware sourcing}{2}{9}\\
+            \ganttmilestone{Proposal submission}{9}\\\\
+
+            % Testing equipment
+            \ganttgroup{Hardware Development}{10}{18}\\ %elem0
+	 \ganttbar[progress=0]{Wiring / soldering}{10}{14}\\
+            \ganttbar[progress=0]{Communicative features}{10}{11}\\
+	 \ganttbar[progress=0]{Physiological sensors}{14}{16}\\
+	 \ganttbar[progress=10]{Encasing construction}{16}{18}\\
+            \ganttmilestone{Prototype built}{18}\\\\
+
+            % Testing equipment
+            \ganttgroup{Software Integration}{17}{23}\\ %elem0
+            \ganttbar[progress=0]{Microcontroller programming}{17}{19}\\
+            \ganttbar[progress=0]{Parser development}{18}{20}\\
+            \ganttbar[progress=0]{GUI application}{20}{23}\\
+            \ganttmilestone{Software-hardware integrated}{23}\\\\
+
+           % Testing equipment
+            \ganttgroup{Prototype Testing}{22}{25}\\ %elem0
+            \ganttbar[progress=0]{Supervisor Feedback}{24}{25}\\
+            \ganttmilestone{Completed Turrellian RGB LED}{25}\\\\
+
+           % Testing equipment
+            \ganttgroup{Scheduled UI and UX testing}{26}{27}\\ %elem0
+            \ganttbar[progress=0]{Data collection}{26}{27}\\
+            \ganttmilestone{Testing completed}{27}\\\\
+	
+	 % Testing equipment
+            \ganttgroup{Dissertation writing}{12}{33}\\ %elem0
+            \ganttmilestone{Ethics application}{10}\\
+            \ganttmilestone{Literature review completed}{20}\\
+            \ganttbar[progress=0]{Data analysis}{27}{28}\\
+            \ganttmilestone{Integration and evaluation of findings}{29}\\
+            \ganttbar[progress=0]{Supervisor redrafting}{30}{31}\\\\
+            \ganttmilestone{Dissertation submission}{32}\\
+
+            %relations 
+            \ganttlink{elem1}{elem4}
+            \ganttlink{elem4}{elem10}
+            \ganttlink{elem7}{elem8}
+            \ganttlink{elem13}{elem14}
+            \ganttlink{elem10}{elem15}
+            \ganttlink{elem15}{elem18}
+            \ganttlink{elem18}{elem21}
+            \ganttlink{elem18}{elem21}
+            \ganttlink{elem23}{elem24}
+            \ganttlink{elem24}{elem25}
+            \ganttlink{elem25}{elem26}
+            \ganttlink{elem26}{elem27}
+            \ganttlink{elem27}{elem28}
 
 
-\section{Risk Analysis}
+        \end{ganttchart}
+    \caption{Gantt chart of Turellian RGB LED proposed approach (2020)}
+    \label{fig:Gantt2014}
+    \end{figure}
+\end{landscape}
 
-In these difficult circumstances – evaluation of risk is an even more crucial process. Due to the present global conditions with the Coronavirus pandemic there are numerous risks overlooked by the following Risk Analysis table with low to medium probability and low to medium severity for my respective project. However, with the close support of my supervisor and the University of Bristol – these unforeseen uncertainties should be mitigated.
 
-\afterpage{%
+\newpage{%
     \clearpage% Flush earlier floats (otherwise order might not be correct)
-    \thispagestyle{empty}
+    \pagestyle{empty}
     \begin{landscape}% Landscape page
   \begin{tabular}{c c c c c c}
     {\textit{Risk}}
@@ -407,6 +496,11 @@ $\begin{matrix} \text{Have potential to be} \\ \text{tested and can mitigate} \\
     \midrule
         \end{tabular}
         \captionof{table}{Full Risk Analysis table}% Add 'table' caption
+
+\section{Risk analysis table overview}
+
+In these difficult circumstances – evaluation of risk is an even more crucial process. Due to the present global conditions with the Coronavirus pandemic there are numerous risks overlooked by the following Risk Analysis table (see Table 1 with low to medium probability and low to medium severity for my respective project. However, with the close support of my supervisor and the University of Bristol – these unforeseen uncertainties should be mitigated.
+
     \end{landscape}
     \clearpage% Flush page
 }
@@ -417,7 +511,7 @@ $\begin{matrix} \text{Have potential to be} \\ \text{tested and can mitigate} \\
 
 \section{Acknowledgments}
 
-I would like to first and foremost thank the incredible help of Dr Paul O'Dowd throught these tough circumstances. His redrafting, thoughts and tireless work helped immensely in drafting this proposal. I would also like to thank the support of fellow MSc student Nathan Cubbitt for lending LEDs and offering plenty of experienced microcontroller advice for this proposal. Lastly, my parents for there huge support - especially with providing financial support for the project so far. 
+I would like to first and foremost thank the incredible help of my supervisor Dr Paul O'Dowd throughout these tough circumstances. His redrafting, thoughts and tireless work helped immensely in drafting this proposal. I would also like to thank the support of fellow MSc student Nathan Cubbitt for lending LEDs and offering plenty of experienced microcontroller advice for this proposal. Lastly, my parents for there huge support - especially with providing financial support for the project so far. 
 
 % BALANCE COLUMNS
 \balance{}
