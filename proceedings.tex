@@ -168,47 +168,82 @@
 \maketitle
 
 \section{Executive Summary}
-This paper offers insights from building and user experience (UX) testing an affect-enhanced RGB LED lamp, which utilises tightly synchronised body sensors and a self-journaling application to gauge users’ affective signals. The RGB LED lamp fundamentally differs from other smart-lighting IoT devices because it is the first device to be tethered to users’ affective state and designed to offer mood enhancement utilising research from colour psychologists Valdez et al. Inspired by the work of light-scape artist James Turrell, the LED lamp is designed to bridge the gap between mindful applications and smart lighting systems – improving users’ day-to-day quality of life. Additionally, this device will also contribute to academic research within multimodal affect-sensitive computing. Emotional intelligence is a facet of human intelligence that has been argued to be indispensable and perhaps most important for successful interpersonal social interaction. A wide variety of cues have been used by MHCI researchers to determine user’s emotion such as facial expression, body movements, vocal expressions and physiological reactions. However, this proposal offers strong support and insights for embodied and physiological approaches towards affect-sensing systems and multimodal device design.
+This paper offers insights from building and user experience (UX) testing an affect-enhanced RGB LED lamp, which utilises tightly synchronised body sensors and a self-journaling application to gauge users’ affective signals. The RGB LED lamp fundamentally differs from other smart-lighting IoT devices because it is the first device to be tethered to users’ affective state and designed to offer mood enhancement utilising research from colour psychologists Valdez et al. Inspired by the work of light-scape artist James Turrell, the LED lamp is designed to bridge the gap between mindful applications and smart lighting systems – improving users’ day-to-day quality of life. Additionally, this device will also contribute to academic research within multimodal affect-sensitive computing. Emotional intelligence is a facet of human intelligence that has been argued to be indispensable and perhaps most important for successful interpersonal social interaction. A wide variety of cues have been used by MHCI researchers to determine user’s emotion such as facial expression, body movements, vocal expressions and physiological reactions. However, this proposal offers strong support and insights for embodied and physiological (tacticle) approaches towards affect-sensing systems and multimodal device design.
 
 
 % ACM Classfication
 
+
 \begin{CCSXML}
 <ccs2012>
 <concept>
-<concept_id>10003120.10003121</concept_id>
-<concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003120.10003121.10003125.10011752</concept_id>
-<concept_desc>Human-centered computing~Haptic devices</concept_desc>
+<concept_id>10010583.10010588.10010596</concept_id>
+<concept_desc>Hardware~Sensor devices and platforms</concept_desc>
 <concept_significance>300</concept_significance>
 </concept>
 <concept>
-<concept_id>10003120.10003121.10003122.10003334</concept_id>
-<concept_desc>Human-centered computing~User studies</concept_desc>
-<concept_significance>100</concept_significance>
+<concept_id>10010405.10010455.10010459</concept_id>
+<concept_desc>Applied computing~Psychology</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10010405.10010406.10010422</concept_id>
+<concept_desc>Applied computing~Event-driven architectures</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10010147.10010178.10010187</concept_id>
+<concept_desc>Computing methodologies~Knowledge representation and reasoning</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10010147.10010178.10010179</concept_id>
+<concept_desc>Computing methodologies~Natural language processing</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003120.10003138</concept_id>
+<concept_desc>Human-centered computing~Ubiquitous and mobile computing</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003120.10003121.10003122</concept_id>
+<concept_desc>Human-centered computing~HCI design and evaluation methods</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10002951.10003317.10003371.10003386</concept_id>
+<concept_desc>Information systems~Multimedia and multimodal retrieval</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10002951.10003317.10003371.10010852</concept_id>
+<concept_desc>Information systems~Environment-specific retrieval</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10002951.10003317.10003347.10003353</concept_id>
+<concept_desc>Information systems~Sentiment analysis</concept_desc>
+<concept_significance>500</concept_significance>
 </concept>
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
-\ccsdesc[300]{Human-centered computing~Haptic devices}
-\ccsdesc[100]{Human-centered computing~User studies}
-
-% Author Keywords
-%\keywords{\plainkeywords}
-
-% Print the classficiation codes
-%\printccsdesc
-Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
-
+\ccsdesc[300]{Hardware~Sensor devices and platforms}
+\ccsdesc[500]{Applied computing~Psychology}
+\ccsdesc[500]{Applied computing~Event-driven architectures}
+\ccsdesc[500]{Computing methodologies~Knowledge representation and reasoning}
+\ccsdesc[500]{Computing methodologies~Natural language processing}
+\ccsdesc[500]{Human-centered computing~Ubiquitous and mobile computing}
+\ccsdesc[500]{Human-centered computing~HCI design and evaluation methods}
+\ccsdesc[500]{Information systems~Multimedia and multimodal retrieval}
+\ccsdesc[500]{Information systems~Environment-specific retrieval}
+\ccsdesc[500]{Information systems~Sentiment analysis}
 
 
 \section{Introduction}
 
-Computing technologies will increasingly embed themselves into the fabric of our everyday living spaces and project the human user into the foreground~\cite{6634207}. Therefore, computer technologies will increasingly be user-centric and intelligent – seamlessly serving the needs of the user with software operating automatically in the background. Indeed, advances in computing power, wearable computer devices and interaction modalities promises a new dawn for multimodal human computer interaction (MHCI) systems and applications. Consequently, Nijholt et al. stressed the need for multimodal computing (or HCI 2) – specifically computing which can understand and respond to natural and autonomic modes of human communication such as emotion automatically~\cite{pantic2008human}~\cite{6634207}.
+Computing technologies will increasingly embed themselves into the fabric of our everyday living spaces and project the human user into the foreground~\cite{6634207}. Therefore, computing will become more user-centric and intelligent – seamlessly serving the needs of the user with software operating automatically in the background. Indeed, advances in computing power, wearable computer devices and interaction modalities promises a new dawn for multimodal human computer interaction (MHCI) systems and applications. Consequently, Nijholt et al. encouraged the development of multimodal computing (or HCI 2) – specifically computing which can understand and respond to natural and autonomic modes of human communication such as emotion automatically~\cite{pantic2008human}~\cite{6634207}.
 
 \begin{figure*}
   \centering
@@ -226,18 +261,18 @@ Computing technologies will increasingly embed themselves into the fabric of our
 
 \subsection{Motivation}
 
-Since Nijholt’s paper in 2008, affective computing has experienced much research interest – particularly developing affect-sensitive multimodal computer interfaces and operating systems~\cite{pantic2008human}~\cite{5771346}. Yet, subsequently, MHCI researcher’s emotion recognition methodologies have differed greatly (see Literature Review). Consequently, at present, MHCI affective-computing research has not reached consensus in multiple areas. This paper will develop a Turrellian RGB LED lamp designed to improve user’s mood in order to add to the debate and provide insights for future affective computing research. Therefore, this paper has two key motivations. Firstly, to design, engineer and evaluate an affect-enhanced RGB LED lamp for UX testing. Secondly, to utilise the devices’ findings to provide further research into developing successful multi-modal affect-sensitive systems.
+Since Nijholt’s paper in 2008, affective computing has experienced much research interest – particularly developing affect-sensitive multimodal computer interfaces and operating systems~\cite{pantic2008human}~\cite{5771346}. Yet, subsequently, MHCI researcher’s emotion recognition methodologies have differed greatly (see literature review). Consequently, at present, MHCI affective-computing research has not reached consensus in multiple areas. This paper will develop a Turrellian RGB LED lamp designed to improve user’s mood in order to add to the academic debate and provide insights for future affective computing research. Therefore, this paper has two key motivations. Firstly, to design, engineer and evaluate an affect-enhanced RGB LED lamp for UX testing. Secondly, to utilise the devices’ findings to provide further research into developing successful multi-modal affect-sensitive computer systems.
 
 Computer markets have seen several light devices for example, the Phillips Energy Up~\cite{Phillips01}, Lumie Bodyclock~\cite{Lumie01} and Dodow~\cite{Dodow01} created to treat ailments such as seasonal affective disorder (SAD), sleep disorders and even dementia. However, these devices are manually calibrated by their users or medical practitioners to treat a specific health problem and there is no concrete evidence of their effect on improving user’s mood. Consequently, at present there is no lighting device or computer system calibrated to improve overall mood, engender positive emotion, and work synonymously with its users’ affective state automatically. This is despite much having been written and established regarding the influence of lighting and coloured lighting on users’ moods and emotion~\cite{baron1992effects}~\cite{han2017effects}~\cite{jo2014smart}~\cite{kim2014study}~\cite{lee2019effects}~\cite{wardono2012effects}~\cite{yang2015lighting}. 
 
 As artist and device namesake James Turrell aptly acknowledges, light forms an integral part of humankind’s biological anatomy – we are a heliotropic species that drink light through the skin in the form of vitamin D~\cite{adcock1990james}~\cite{basse2016light}. Different spectrums of lighting have been found to have a range of health benefits from improving concentration~\cite{kuller2006impact} and sleep~\cite{} to alleviating depression~\cite{kripke1998light} and migraines~\cite{Green01}. Specifically, for this research paper, colour, wavelength and hues chosen to render positive emotion and mood for users will be informed by data from research conducted by colour psychologists Valdez et al.~\cite{valdez1994effects} (see figure 2). 
 
-MHCI research centred on utilising bodily feelings or physiological data to develop affect-sensitive computer devices is limited~\cite{pantic2008human}. Therefore, the RGB LED lamp presented here will help build on this existing research by utilising quantifiable bodily changes and text provided by the user through a GUI interface as key metrics for rendering its lighting. In contrast, MHCI research has been more focused on utilising users’ facial data~\cite{yang2015lighting} and vocal expression~\cite{davletcharova2015detection} to determine emotion. Potentially due to Darwin~\cite{hess2009darwin} and Ekman’s influential research into visual depictions of facial actions for studying emotion~\cite{ekman1992facial}~\cite{ekman2003darwin}~\cite{ekman2006darwin}. As emphasised in the literature review, utilising user’s facial data and vocal expression rather than primarily physiological data is surprising for two key reasons. Firstly, facial and vocal analysis is complex and computationally taxing for developing systems and devices~\cite{marechal2019survey}. Secondly, convincing insights from neuroscience find that emotions are fundamentally caused by patterned changes within the body~\cite{colombetti2014feeling}~\cite{james1922emotions}~\cite{laricchiuta2015embodied}. Additionally, the RGB LED lamp will be further improved by recent neuroscientific research by Sterelny into scaffolded perspectives of emotion or extended-mind theory – which centres on objects and places engendering emotions for their users~\cite{colombetti2015scaffoldings}~\cite{sterelny2010minds}~\cite{sterelny2004externalism}.
+MHCI research centred on utilising bodily feelings or tactile physiological data to develop affect-sensitive computer devices is limited~\cite{pantic2008human}. Therefore, the RGB LED lamp presented here will help build on this existing research by utilising quantifiable bodily changes and text provided by the user through a GUI interface as key metrics for rendering its lighting. In contrast, MHCI research has currently to-date has been more focused on utilising users’ facial data~\cite{yang2015lighting} and vocal expression~\cite{davletcharova2015detection} to determine emotion. Potentially due to Darwin~\cite{hess2009darwin} and Ekman’s influential research into visual depictions of facial actions for studying emotion~\cite{ekman1992facial}~\cite{ekman2003darwin}~\cite{ekman2006darwin}. As emphasised in the literature review, utilising user’s facial data and vocal expression rather than primarily physiological data is surprising for two key reasons. Firstly, facial and vocal analysis is complex and computationally taxing for developing systems and devices~\cite{marechal2019survey}. Secondly, convincing insights from neuroscience find that emotions are fundamentally caused by patterned changes within the body~\cite{colombetti2014feeling}~\cite{james1922emotions}~\cite{laricchiuta2015embodied}. Additionally, the RGB LED lamp will be further improved by recent neuroscientific research by Sterelny into scaffolded perspectives of emotion or extended-mind theory – which centres on objects and places engendering emotions for their users~\cite{colombetti2015scaffoldings}~\cite{sterelny2010minds}~\cite{sterelny2004externalism}.
 
 
 \subsection{Significance of James Turrell}
 
-As the device-namesake James Turrell’s artwork has been a dominant influence in this research (figure 1). Turrell’s work explores the immateriality of light – building on the sensorial and emotional experience of space and colour~\cite{adcock1990james}. His oeuvre, phenomenological lightscapes feature technically advanced LEDs, which are configured by computer programming~\cite{hylton2013james}. In particular, his expositions focusing on the \textit{Ganzfeld effect} as pictured in figure 1 offer total loss of depth perception enabling colour to fully inhabit and immerse the space~\cite{basse2016light}. This experience has prompted a transcendental and often relaxing experience for visitors of his work and spaces~\cite{adcock1990james}~\cite{basse2016light}.
+As the device-namesake James Turrell’s artwork has been a dominant influence in this research (figure 1). Turrell’s work explores the immateriality of light – building on the sensorial and emotional experience of space and colour~\cite{adcock1990james}. His oeuvre, phenomenological lightscapes feature technically advanced LEDs, which are configured by computer programming~\cite{hylton2013james}. In particular, his expositions focusing on the Ganzfeld effect as pictured above offer total loss of depth perception enabling colour to fully inhabit and immerse the space~\cite{basse2016light}. This experience has prompted a transcendental and often relaxing experience for visitors of his work and spaces~\cite{adcock1990james}~\cite{basse2016light}.
 
 \section{Literature Review}
 
@@ -253,15 +288,21 @@ Opinion mining and text-based sentiment analysis consists in identifying orienta
 
 Auditory emotion recognition faces similar difficulties for MHCI researchers despite the emergence of speech-based artificial assistants (e.g. Google Home, Amazon and Alexa). Equally language and cultural context represents another difficult challenge~\cite{davletcharova2015detection}. Nonetheless, sound extraction has low requirements for hardware and presents opportunity for emotion analysis~\cite{marechal2019survey}. Therefore Davletcharova et al. have extracted features from sound such as the ratio of amplitudes, shape of signal waveform and frequency distribution to analyse for acoustic differences within different emotional situations~\cite{davletcharova2015detection}. Consequently, useful sound coefficients to extract affective auditory data have been developed such as the Mel-Frequency Cepstral Coefficient (MFCC)~\cite{kathiresan2019cepstral}. Studies by Chaspari et al. with MFCC demonstrated computer accuracy of up to 75.15 percent in Greek~\cite{chaspari2014emotion}, whilst Aruti et al. demonstrated a mean accuracy of 80.5 percent in Basque~\cite{davletcharova2015detection} – yet crucially both experiments were not rendering emotion classification from sound automatically.
 
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/Architecture}
+  \caption{Architecture of automatic human affect analyser utilising fusion of approaches.}~\cite{pantic2003toward}~\label{fig:figure1}
+\end{figure}
+
 \subsection{Research into the role of light on mood and emotion}
 
 A number of commercially available devices and academic studies have utilised the mediums of light and colour to enhance users sensory experience, room ambience and subsequently the mood of users~\cite{flores2017effect}~\cite{kuijsters2011improving}~\cite{kuijsters2015lighting}. Dutch researchers, Kuijsters, Reidi et al. were able to affectively enhance daily experiences for elderly and vulnerable care home occupants using colour-enhanced lighting. Indeed, they manually provided cosy ambiences to reduce elderly participants anxiety and an activating ambience to stimulate arousal~\cite{kuijsters2015lighting}. This study proves that a multimodal RGB LED lamp could serve its purpose by both enhancing users affective experience and improve on Kuijster et al.’s findings as the device will function both automatically and autonomously. Further underlining this, Kujisters et al. conclude, “we envision an adaptive ambience creation platform that can automatically adapt” – the proposed RGB LED lamp and multimodal affect-sensitive computer software will help fill this void~\cite{kuijsters2015lighting}.
 
-An oft-cited study by Valdez et al. found that colours had definitive effect on the emotion of participants~\cite{valdez1994effects}. Using the PAD model Blue, blue-green, green, red-purple, purple and purple-blue were the most pleasant hues~\cite{valdez1994effects} (see figure 2). With green-yellow, blue-green and green the most arousing whereas purple-blue and yellow-red amongst the least arousing~\cite{valdez1994effects}. Although further positive evidence for the potential effectiveness of the RGB LED lamp – Valdez et al.’s study is limited by the PAD model, which perhaps underplays the significance of their findings. A larger and more diverse study by Kuller et al utilised Valdez’s research and successfully adapted work environments lighting colour and conditions over a year within four different countries~\cite{kuller2006impact}~\cite{kuller2009color}. They found that workers were most productive and positive and when lighting was not too bright (under 2000 lux) and too dark (above 500 lux)~\cite{kuller2006impact}~\cite{kuller2009color}. In addition, mood was most positive amongst workers in colourful environments~\cite{kuller1986physiological}.
+An oft-cited study by Valdez et al. found that colours had definitive effect on the emotion of participants~\cite{valdez1994effects}. Using the PAD model blue, blue-green, green, red-purple, purple and purple-blue were the most pleasant hues~\cite{valdez1994effects} (see figure 2). With green-yellow, blue-green and green the most arousing whereas purple-blue and yellow-red amongst the least arousing~\cite{valdez1994effects}. Although further positive evidence for the potential effectiveness of the RGB LED lamp – Valdez et al.’s study is limited by the PAD model, which perhaps underplays the significance of their findings. A larger and more diverse study by Kuller et al utilised Valdez’s research and successfully adapted work environments lighting colour and conditions over a year within four different countries~\cite{kuller2006impact}~\cite{kuller2009color}. They found that workers were most productive and positive and when lighting was not too bright (under 2000 lux) and too dark (above 500 lux)~\cite{kuller2006impact}~\cite{kuller2009color}. In addition, mood was most positive amongst workers in colourful environments~\cite{kuller1986physiological}.
 
 \subsection{Similar IoT light devices to the Turrellian RGB lamp}
 
-Three commercial devices similar to the Turrellian RGB LED lamp include the Dyson Lightcycle~\cite{Dyson01}, Phillips Hue~\cite{Phillips01} and Nanoleaf light panels~\cite{Nanoleaf01}. Dyson’s LED Lightcycle auto-adjusts depending on age of user, tasks, senses motion and uses a 32-bit microprocessor to continually interpret daylight data to render the LED close to daylight colours~\cite{Dyson01}. Contrastingly, the most popular competitor device, the Phillips Hue is a line of colour changing 800 lumen LED lamps, strips and bulbs controlled wirelessly from Apps, vocally with Alexa or Google Assistant and configurable with iOS HomeKit~\cite{Phillips01}. Lastly, Nanoleaf Inc. are a diverse range of multicoloured LED light panels –integrable with assistant software and touch sensitive~\cite{Nanoleaf01}. 
+Three commercial devices similar to the Turrellian RGB LED lamp include the Dyson Lightcycle~\cite{Dyson01}, Phillips Hue~\cite{Phillips01} and Nanoleaf light panels~\cite{Nanoleaf01}. Dyson’s LED Lightcycle auto-adjusts depending on age of user, tasks, senses motion and uses a 32-bit microprocessor to continually interpret daylight data to render the LED close to daylight colours~\cite{Dyson01}. Contrastingly, the most popular competitor device, the Phillips Hue is a line of colour changing 800 lumen LED lamps, strips and bulbs controlled wirelessly from Apps, vocally with Alexa or Google Assistant and configurable with iOS HomeKit~\cite{Phillips01}. Lastly, Nanoleaf Inc. are a diverse range of multicoloured LED light panels – integrable with assistant software and touch sensitive~\cite{Nanoleaf01}. 
 
 These IoT devices differ enormously in terms of specifications, pricing, and market share. At the time of writing, the Phillips Hue is by far the most popular and successful smart IoT LED light device with the range reporting yearly revenues of almost €600 million~\cite{}. The success of the Phillips Hue is potentially as a consequence of the breadth of its range and array of price points thus catering to a wide spectrum of potential customers in contrast to competitors~\cite{Phillips01}. Similarly, much like its competitors the Hue adjusts brightness based on time of day, can provide visual notification for users incoming Uber rides and can turn lights on with motion detection at predefined times – helping abate home burglaries~\cite{Phillips01}. 
 
@@ -277,11 +318,11 @@ Several mindful applications are similar to the Turrellian RGB LED lamp GUI and 
 
 Despite the secondary role of physiological affect sensors as mentioned earlier in the literature review. In fact, automated physiological affect sensing is a strong and undervalued modality which should be used for future multimodal affect-sensing computer systems because of three clear reasons. Firstly, Pantic et al.’s criticism~\cite{pantic2003toward}~\cite{pantic2008human}~\cite{6634207} centred on the discomfort of wearable computer devices no longer holds. Secondly, studies and research into physiological affect sensing holds the most feasibility aside from text-based sentiment analysis~\cite{goshvarpour2017fusion}~\cite{goshvarpour2017indices}~\cite{goshvarpour2017discrimination}. Thirdly, insights from scaffolded affective cognition hold exciting future potential for physiological or embodied approaches towards affect-sensitive multimodal computing~\cite{colombetti2015scaffoldings}. 
 
-Potentially, Pantic et al. were unable to foresee the continued exponential growth of Moore’s Law~\cite{} and advent of more non-intrusive, comfortable sensors and wearables for accurate physiological data~\cite{chen2012making}. Indeed, the demand for smart, ergonomic and non-intrusive wearable body sensors has grown in prominence~\cite{chen2012making}. From mobile devices~\cite{}, watches~\cite{kim2015acceptance}, smart running trainers~\cite{hurford2009types}, to even jewellery~\cite{ju2015smart} – often-AI driven “smart” physiological sensors designed to collect data on sleep, heartrate, steps, respiration, bodily posture and so much more. User requirements and competitive markets will help to ensure these devices get smarter, less obtrusive and collect better physiological data on their users, which can then subsequently be fed to affect-driven computer devices such as the proposed Turrellian RGB LED. 
+Potentially, Pantic et al. were unable to foresee the continued exponential growth of Moore’s Law~\cite{} and advent of more non-intrusive, comfortable sensors and wearables for accurate physiological data~\cite{chen2012making}. Indeed, the demand for smart, ergonomic and non-intrusive wearable body sensors has grown in prominence~\cite{chen2012making}. From mobile devices~\cite{}, watches~\cite{kim2015acceptance}, smart running trainers~\cite{hurford2009types}, to even jewellery~\cite{ju2015smart} – often-AI driven “smart” physiological sensors designed to collect data on sleep, heartrate, steps, respiration, bodily posture and plenty more. User requirements and competitive markets will help to ensure these devices get smarter, less obtrusive and collect better physiological data on their users, which can then subsequently be fed to affect-driven computer devices such as the proposed Turrellian RGB LED. 
 
-Although this paper accepts that a broad fusion of approaches discussed in the taxonomy is ultimately most ideal, physiological data collection should become more central in future developments towards affect-sensitive multimodal computing. Physiological approaches avoid the potential difficulties of facial recognition and auditory approaches as they are easier to employ automatically and accurately. Research by Goshvarpour et al. using heart rate and respiratory volume demonstrated affective classification rates of up to 92 percent (sensitivity: 95 percent and specificity: 83.33 percent) utilising heart rate variability and pulse rate alone~\cite{goshvarpour2017fusion}. Also, high accuracy was observed in research by Piana et al. of 84.7 percent for recognition of boredom, pain and surprise emotions utilising physiological signals~\cite{piana2014real}. Even body posture and movement has also been recognised as an effective expressive modality for human emotion. Li et al. utilising Microsoft Kinect found that a walker’s gait was successful in determining participants emotional state~\cite{li2016emotion}. Accordingly, the proposed Turrellian RGB LED should perform well in affect-detection because it will combine many of the above physiological approaches. 
+Although this paper accepts that a broad fusion of approaches discussed in the taxonomy is ultimately most ideal (see figure 3), physiological data collection should become more central in future developments towards affect-sensitive multimodal computing. Physiological approaches avoid the potential difficulties of facial recognition and auditory approaches as they are easier to employ automatically and accurately. Research by Goshvarpour et al. using heart rate and respiratory volume demonstrated affective classification rates of up to 92 percent (sensitivity: 95 percent and specificity: 83.33 percent) utilising heart rate variability and pulse rate alone~\cite{goshvarpour2017fusion}. Also, high accuracy was observed in research by Piana et al. of 84.7 percent for recognition of boredom, pain and surprise emotions utilising physiological signals~\cite{piana2014real}. Even body posture and movement has also been recognised as an effective expressive modality for human emotion. Li et al. utilising Microsoft Kinect found that a walker’s gait was successful in determining participants emotional state~\cite{li2016emotion}. Accordingly, the proposed Turrellian RGB LED should perform well in affect-detection because it will combine many of the above physiological approaches. 
 
-There is further reason to support physiological and embodied approaches to multimodal affect sensing for computing and smart IoT devices. Many prominent neurologists and enactivists have argued that emotion is embodied and induced by bodily events~\cite{colombetti2008feeling}. Emotion-theorist William James argued that autonomic bodily changes precede our emotional experiences~\cite{james1994physical}. Indeed, James convincingly states that emotional experience abstracted from all physical bodily feelings is simply nothing but “feelingless cognition”~\cite{james1894discussion}~\cite{james1922emotions}. In addition, Levenson, Ekman and Friesen found that for the six basic emotions each of these corresponds to a unique bodily pattern~\cite{levenson1990voluntary}~\cite{prinz2004gut}. Therefore, physiological affect-sensing has been widely recognised even from researchers primarily utilising visual depictions of facial actions for studying emotion.
+There is further reason to support physiological and embodied approaches to multimodal affect sensing for computing and smart IoT devices. Many prominent neurologists and enactivists have argued that emotion is embodied and induced by bodily events~\cite{colombetti2008feeling}. Emotion-theorist William James argued that autonomic bodily changes precede our emotional experiences~\cite{james1994physical}. Indeed, James convincingly states that emotional experience abstracted from all physical bodily feelings is simply nothing but “feelingless cognition”~\cite{james1894discussion}~\cite{james1922emotions}. In addition, Levenson, Ekman and Friesen found that for the six basic emotions each of these corresponds to a unique bodily pattern~\cite{levenson1990voluntary}~\cite{prinz2004gut}. Therefore, physiological affect-sensing has been widely recognised even by researchers primarily utilising visual depictions of facial actions for studying emotion.
 
 Other compelling support for physiological approaches becoming central to the design and implementation of affect-sensitive multimodal computer systems and IoT devices includes research into unconscious emotion~\cite{scarantino2010insights}~\cite{winkielman2004unconscious}. Within Scarantino’s blindfright experiments he was able to activate subject’s neurophysiological fear system – inspiring consciously unfelt yet empirically measurable physiological, facial and bodily changes coherent with the emotion of fear~\cite{scarantino2010insights}. Indeed, in response to unseen stimuli and without conscious awareness subjects demonstrated: enhanced SCRs, potentiated startle reflex and differential amydala activation~\cite{scarantino2010insights}~\cite{winkielman2004unconscious}. Enabling the development of computer systems which can automatically respond to emotion sourced from bodily change and even anticipate users emotional state from their unconscious bodily changes and emotions~\cite{scarantino2010insights}~\cite{smith2016unconscious}. Hence, it will be exciting to determine if the RGB LED offers anticipatory performance.
 
@@ -323,12 +364,12 @@ Inspired by the phenomenological work of artist and architect Turrell another br
 
 \section{Proposed Approach}
 
-This section will sequentially discuss and evaluate this papers’ proposed approach to achieve the core objectives outlined earlier and milestones timelined in the 6-month gantt chart (outlined on the landscape page below in figure 3).
+This section will sequentially discuss and evaluate this papers’ proposed approach to achieve the core objectives outlined earlier and milestones timelined in the 6-month gantt chart (outlined on the landscape page below in figure 4).
 
 \section{Discussion of gantt chart}
 \subsection{RGB LED hardware development}
 
-For this paper there are four clear steps in the hardware development cycle (see figure 3). Step one will involve wiring and soldering RGB LEDs to a single-board microcontroller. Single-board microcontrollers such as the Raspberry Pi have been chosen to enable the device to be opensource and accessible for other MHCI researchers. RGB LEDs will be used to make the device produce the colour ranges formulated by psychologists Valdez and Biggam et al. – permitting research towards my first hypothesis on the role of light and mood ~\cite{biggam2006progress}~\cite{valdez1994effects}.
+For this paper there are four clear steps in the hardware development cycle (see figure 4). Step one will involve wiring and soldering RGB LEDs to a single-board microcontroller. Single-board microcontrollers such as the Raspberry Pi have been chosen to enable the device to be opensource and accessible for other MHCI researchers. RGB LEDs will be used to make the device produce the colour ranges formulated by psychologists Valdez and Biggam et al. – permitting research towards my first hypothesis on the role of light and mood ~\cite{biggam2006progress}~\cite{valdez1994effects}.
 
 Step two will concentrate on making the RGB LED device communicative. This will be achievable by adding relevant Wi-Fi and Bluetooth modules to the single-board microcontroller. Step three of the hardware development cycle will focus on having the device receive data from physiological monitors from wearable processors. Physiological sensors will tether the device to users’ affective signals – providing research and data for my first hypothesis and for affect-enhanced computing research. Lastly, step four centres on building an encasing for the IoT device. Generating a professional encasing utilising a 3D printer would be an aesthetic and desirable feature, although may be challenging during the present international crisis.
 
@@ -338,7 +379,7 @@ After hardware development, agile and intently user-focused software development
 
 \subsection{User experience testing of the RGB LED}
 
-Once the Turrellian RGB LED has been fully developed as outlined in the seven key steps noted in figure 3 – testing of the effectiveness of the device can commence. Resolution and data analysis collected for my two hypotheses will be evaluated and determined. A user-centric approach will be adopted in the testing of the device. Users will be aided through wiring physiological sensors and provided with ample time to self-journal their present affective state through the RGB LED GUI journal. Users will be given ample exposure to the RGB LED for at least twenty minutes.
+Once the Turrellian RGB LED has been fully developed as outlined in the seven key steps noted in figure 4 – testing of the effectiveness of the device can commence. Resolution and data analysis collected for my two hypotheses will be evaluated and determined. A user-centric approach will be adopted in the testing of the device. Users will be aided through wiring physiological sensors and provided with ample time to self-journal their present affective state through the RGB LED GUI journal. Users will be given ample exposure to the RGB LED for at least twenty minutes.
 
 After the timed session, all physiological data will be saved – users will be notified of any significant physiological changes and provided with a feedback form and five-minute interview time for additional comments and thoughts. Maximum participant time will be thirty minutes. Participants will be provided with my personal contact details if they form any thoughts later upon further reflection.
 
