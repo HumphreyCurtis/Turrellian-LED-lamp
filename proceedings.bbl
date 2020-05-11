@@ -75,11 +75,50 @@
 \newblock
 
 
+\bibitem{MedicalNews03}
+{Mary Bates}. 2019.
+\newblock New risk from too much screentime.
+\newblock   (June 2019).
+\newblock
+\showURL{%
+Retrieved May 11, 2020 from
+  \url{https://www.sciencenewsforstudents.org/article/new-health-risk-too-much-screentime-sitting}}
+
+
 \bibitem{biggam2006progress}
 {Carole~Patricia Biggam}, {Christian Kay}, {and} {Nicola Pitchford}. 2006.
 \newblock {\em Progress in Colour Studies: Psychological aspects}. Vol.~2.
 \newblock John Benjamins Publishing.
 \newblock
+
+
+\bibitem{MedicalNews01}
+{Eleanor Bird}. 2020.
+\newblock Should parents limit screen time for young children?
+\newblock   (April 2020).
+\newblock
+\showURL{%
+Retrieved May 10, 2020 from
+  \url{https://www.medicalnewstoday.com/articles/should-parents-limit-screen-time-for-young-children}}
+
+
+\bibitem{MedicalNews02}
+{Mike Brooks}. 2019.
+\newblock How Much Screen Time Is Too Much?
+\newblock   (May 2019).
+\newblock
+\showURL{%
+Retrieved May 11, 2020 from
+  \url{https://www.psychologytoday.com/gb/blog/tech-happy-life/201812/how-much-screen-time-is-too-much}}
+
+
+\bibitem{Calm01}
+{Calm}. 2020.
+\newblock Calm App.
+\newblock   (June 2020).
+\newblock
+\showURL{%
+Retrieved May 11, 2020 from \url{https://www.calm.com/}}
 
 
 \bibitem{chaspari2014emotion}
@@ -254,6 +293,15 @@ Retrieved May 2, 2020 from
 \newblock
 
 
+\bibitem{Headspace01}
+{Headpsace}. 2020.
+\newblock Headspace App.
+\newblock   (June 2020).
+\newblock
+\showURL{%
+Retrieved May 11, 2020 from \url{https://www.headspace.com/}}
+
+
 \bibitem{hess2009darwin}
 {Ursula Hess} {and} {Pascal Thibault}. 2009.
 \newblock \showarticletitle{Darwin and emotion expression.}
@@ -402,6 +450,13 @@ Retrieved May 2, 2020 from
 \newblock
 
 
+\bibitem{lange1885om}
+{Carl~Georg Lange}. 1885.
+\newblock {\em Om sindsbevaegelser; et psyko-fysiologisk studie}.
+\newblock Lund.
+\newblock
+
+
 \bibitem{laricchiuta2015embodied}
 {Daniela Laricchiuta}, {Laura Petrosini}, {Eleonora Picerni}, {Debora Cutuli},
   {Mariangela Iorio}, {Chiara Chiapponi}, {Carlo Caltagirone}, {Fabrizio
@@ -438,12 +493,19 @@ Retrieved May 2, 2020 from
 
 
 \bibitem{Lumie01}
-{Lumie}. 2001.
+{Lumie}. 2020.
 \newblock Lumie Bodyclock.
-\newblock   (May 2001).
+\newblock   (May 2020).
 \newblock
 \showURL{%
 Retrieved May 2, 2020 from \url{https://www.lumie.com/products/arabica}}
+
+
+\bibitem{lundstrom2003moore}
+{Mark Lundstrom}. 2003.
+\newblock \showarticletitle{Moore's law forever?}
+\newblock {\em Science\/} {299}, 5604 (2003), 210--211.
+\newblock
 
 
 \bibitem{marechal2019survey}
@@ -537,6 +599,14 @@ Retrieved May 2, 2020 from
 Retrieved May 2, 2020 from \url{https://reflectly.app/}}
 
 
+\bibitem{rodgers2014recent}
+{Mary~M Rodgers}, {Vinay~M Pai}, {and} {Richard~S Conroy}. 2014.
+\newblock \showarticletitle{Recent advances in wearable sensors for health
+  monitoring}.
+\newblock {\em IEEE Sensors Journal\/} {15}, 6 (2014), 3119--3126.
+\newblock
+
+
 \bibitem{scarantino2010insights}
 {Andrea Scarantino}. 2010.
 \newblock \showarticletitle{Insights and blindspots of the cognitivist theory
@@ -576,6 +646,16 @@ Retrieved May 2, 2020 from \url{https://reflectly.app/}}
   perspective}.
 \newblock {\em Neuroscience \& Biobehavioral Reviews\/}  {69} (2016), 216--238.
 \newblock
+
+
+\bibitem{Phillips02}
+{Statista}. 2020.
+\newblock Total Revenue of Phillips Lighting.
+\newblock   (May 2020).
+\newblock
+\showURL{%
+Retrieved May 2, 2020 from
+  \url{https://www.statista.com/statistics/824679/sales-revenue-of-philips-lighting-by-market/}}
 
 
 \bibitem{sterelny2010minds}

@@ -23,6 +23,18 @@ Warning--entry type for "Nanoleaf01" isn't style-file defined
 --line 786 of file sample.bib
 Warning--entry type for "Reflectly01" isn't style-file defined
 --line 795 of file sample.bib
+Warning--entry type for "Phillips02" isn't style-file defined
+--line 804 of file sample.bib
+Warning--entry type for "MedicalNews01" isn't style-file defined
+--line 835 of file sample.bib
+Warning--entry type for "MedicalNews02" isn't style-file defined
+--line 844 of file sample.bib
+Warning--entry type for "MedicalNews03" isn't style-file defined
+--line 853 of file sample.bib
+Warning--entry type for "Calm01" isn't style-file defined
+--line 862 of file sample.bib
+Warning--entry type for "Headspace01" isn't style-file defined
+--line 871 of file sample.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty address in adcock1990james
 Warning--empty publisher in afzal2009perception
@@ -67,6 +79,7 @@ Warning--page numbers missing in both pages and numpages fields in kim2015accept
 Warning--empty publisher in kuijsters2011improving
 Warning--empty address in kuijsters2011improving
 Warning--page numbers missing in both pages and numpages fields in kuijsters2015lighting
+Warning--empty address in lange1885om
 Warning--empty address in lee2019effects
 Warning--empty address in marechal2019survey
 Warning--no number and no volume in piana2014real
@@ -80,45 +93,45 @@ Warning--no number and no volume in sterelny2004externalism
 Warning--empty address in tian2005facial
 Warning--empty publisher in trigeorgis2016adieu
 Warning--empty address in trigeorgis2016adieu
-You've used 72 entries,
+You've used 81 entries,
             5283 wiz_defined-function locations,
-            1623 strings with 27424 characters,
-and the built_in function-call counts, 69569 in all, are:
-= -- 10094
-> -- 2149
+            1673 strings with 28585 characters,
+and the built_in function-call counts, 80663 in all, are:
+= -- 11652
+> -- 2299
 < -- 1
-+ -- 668
-- -- 1126
-* -- 4340
-:= -- 7146
-add.period$ -- 370
-call.type$ -- 72
-change.case$ -- 486
-chr.to.int$ -- 70
-cite$ -- 128
-duplicate$ -- 5398
-empty$ -- 3868
-format.name$ -- 907
-if$ -- 17436
++ -- 701
+- -- 1595
+* -- 5068
+:= -- 8229
+add.period$ -- 416
+call.type$ -- 81
+change.case$ -- 533
+chr.to.int$ -- 79
+cite$ -- 138
+duplicate$ -- 5913
+empty$ -- 4253
+format.name$ -- 967
+if$ -- 19630
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 245
-newline$ -- 542
-num.names$ -- 430
-pop$ -- 2131
+missing$ -- 255
+newline$ -- 617
+num.names$ -- 484
+pop$ -- 2319
 preamble$ -- 1
-purify$ -- 772
+purify$ -- 855
 quote$ -- 0
-skip$ -- 1496
+skip$ -- 1634
 stack$ -- 0
-substring$ -- 6311
-swap$ -- 531
-text.length$ -- 730
+substring$ -- 8423
+swap$ -- 569
+text.length$ -- 1560
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 624
-warning$ -- 56
-while$ -- 466
+type$ -- 701
+warning$ -- 57
+while$ -- 529
 width$ -- 0
-write$ -- 972
+write$ -- 1101
 (There was 1 error message)
