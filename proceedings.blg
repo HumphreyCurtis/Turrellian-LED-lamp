@@ -35,13 +35,18 @@ Warning--entry type for "Calm01" isn't style-file defined
 --line 862 of file sample.bib
 Warning--entry type for "Headspace01" isn't style-file defined
 --line 871 of file sample.bib
+Warning--entry type for "Thingspeak01" isn't style-file defined
+--line 894 of file sample.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in abrahamsson2017agile
+Warning--page numbers missing in both pages and numpages fields in abrahamsson2017agile
 Warning--empty address in adcock1990james
 Warning--empty publisher in afzal2009perception
 Warning--empty address in afzal2009perception
 Warning--empty address in biggam2006progress
 Warning--empty publisher in chaspari2014emotion
 Warning--empty address in chaspari2014emotion
+Warning--empty address in cockburn2006agile
 Warning--empty address in colombetti2014feeling
 Warning--no journal in colombetti2008feeling
 Warning--no number and no volume in colombetti2008feeling
@@ -93,45 +98,45 @@ Warning--no number and no volume in sterelny2004externalism
 Warning--empty address in tian2005facial
 Warning--empty publisher in trigeorgis2016adieu
 Warning--empty address in trigeorgis2016adieu
-You've used 81 entries,
+You've used 84 entries,
             5283 wiz_defined-function locations,
-            1673 strings with 28585 characters,
-and the built_in function-call counts, 80663 in all, are:
-= -- 11652
-> -- 2299
+            1685 strings with 28921 characters,
+and the built_in function-call counts, 82889 in all, are:
+= -- 11945
+> -- 2367
 < -- 1
-+ -- 701
-- -- 1595
-* -- 5068
-:= -- 8229
-add.period$ -- 416
-call.type$ -- 81
-change.case$ -- 533
-chr.to.int$ -- 79
-cite$ -- 138
-duplicate$ -- 5913
-empty$ -- 4253
-format.name$ -- 967
-if$ -- 19630
++ -- 719
+- -- 1642
+* -- 5207
+:= -- 8483
+add.period$ -- 432
+call.type$ -- 84
+change.case$ -- 551
+chr.to.int$ -- 82
+cite$ -- 144
+duplicate$ -- 6075
+empty$ -- 4375
+format.name$ -- 994
+if$ -- 20147
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 255
-newline$ -- 617
-num.names$ -- 484
-pop$ -- 2319
+missing$ -- 261
+newline$ -- 640
+num.names$ -- 502
+pop$ -- 2395
 preamble$ -- 1
-purify$ -- 855
+purify$ -- 885
 quote$ -- 0
-skip$ -- 1634
+skip$ -- 1672
 stack$ -- 0
-substring$ -- 8423
-swap$ -- 569
-text.length$ -- 1560
+substring$ -- 8630
+swap$ -- 575
+text.length$ -- 1607
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 701
-warning$ -- 57
-while$ -- 529
+type$ -- 724
+warning$ -- 60
+while$ -- 545
 width$ -- 0
-write$ -- 1101
+write$ -- 1141
 (There was 1 error message)

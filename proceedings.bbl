@@ -32,6 +32,15 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem{abrahamsson2017agile}
+{Pekka Abrahamsson}, {Outi Salo}, {Jussi Ronkainen}, {and} {Juhani Warsta}.
+  2017.
+\newblock \showarticletitle{Agile software development methods: Review and
+  analysis}.
+\newblock {\em arXiv preprint arXiv:1709.08439\/} (2017).
+\newblock
+
+
 \bibitem{adcock1990james}
 {Craig~E Adcock} {and} {James Turrell}. 1990.
 \newblock {\em James Turrell: the art of light and space}.
@@ -135,6 +144,13 @@ Retrieved May 11, 2020 from \url{https://www.calm.com/}}
 \newblock \showarticletitle{Making sense of mobile health data: an open
   architecture to improve individual-and population-level health}.
 \newblock {\em Journal of medical Internet research\/} {14}, 4 (2012), e112.
+\newblock
+
+
+\bibitem{cockburn2006agile}
+{Alistair Cockburn}. 2006.
+\newblock {\em Agile software development: the cooperative game}.
+\newblock Pearson Education.
 \newblock
 
 
@@ -672,6 +688,15 @@ Retrieved May 2, 2020 from
   mind}.
 \newblock {\em The externalist challenge\/} (2004), 239--254.
 \newblock
+
+
+\bibitem{Thingspeak01}
+{Thingspeak}. 2020.
+\newblock Thingspeak.
+\newblock   (June 2020).
+\newblock
+\showURL{%
+Retrieved May 11, 2020 from \url{https://thingspeak.com/}}
 
 
 \bibitem{tian2005facial}
