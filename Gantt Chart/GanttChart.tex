@@ -1,0 +1,107 @@
+\documentclass{report}
+
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+
+\definecolor{barblue}{RGB}{153,204,254} %up to 255
+
+\begin{document}
+\pagestyle{empty}
+\begin{landscape}
+    \begin{figure}
+    \centering
+\vspace*{-3.5cm}
+\hspace*{-3cm}
+        \begin{ganttchart}[%Specs
+            y unit title=0.4cm,
+            y unit chart=0.5cm,
+            canvas/.style={fill=none, draw=black, line width=.75pt},
+            vgrid,
+            title label anchor/.style={below=-1.6ex},
+            title left shift=.05,
+            title right shift=-.05,
+            title height=1,
+            title/.style={fill=none},
+            title label font=\bfseries,
+            bar/.style={fill=barblue},
+            incomplete/.style={fill=white},
+            progress label text={},
+            bar height=0.7,
+            group right shift=0,
+            group top shift=.6,
+            group height=.3,
+            group peaks height=.2]{1}{36}
+
+            %labels
+            \gantttitle{Six-month timeline and project milestones}{36}\\
+            \gantttitle{April}{6}
+            \gantttitle{May}{6}
+            \gantttitle{June}{6}
+            \gantttitle{July}{6}
+            \gantttitle{August}{6}
+            \gantttitle{September}{6}\\
+
+            % Parameter Selection
+            \ganttgroup{Research Proposal}{2}{9}\\ %elem0
+       	 \ganttmilestone{Business franchise for UX testing found}{3}\\
+            \ganttbar[progress=100]{Development}{2}{9}\\
+            \ganttbar[progress=90]{Hardware sourcing}{2}{9}\\
+            \ganttmilestone{Proposal submission}{9}\\\\
+
+            % Testing equipment
+            \ganttgroup{Hardware Development}{10}{18}\\ %elem0
+	 \ganttbar[progress=0]{Wiring / soldering}{10}{14}\\
+            \ganttbar[progress=0]{Communicative features}{10}{11}\\
+	 \ganttbar[progress=0]{Physiological sensors}{14}{16}\\
+	 \ganttbar[progress=10]{Encasing construction}{16}{18}\\
+            \ganttmilestone{Prototype built}{18}\\\\
+
+            % Testing equipment
+            \ganttgroup{Software Integration}{17}{23}\\ %elem0
+            \ganttbar[progress=0]{Microcontroller programming}{17}{19}\\
+            \ganttbar[progress=0]{Parser development}{18}{20}\\
+            \ganttbar[progress=0]{GUI application}{20}{23}\\
+            \ganttmilestone{Software-hardware integrated}{23}\\\\
+
+           % Testing equipment
+            \ganttgroup{Prototype Testing}{22}{25}\\ %elem0
+            \ganttbar[progress=0]{Supervisor Feedback}{24}{25}\\
+            \ganttmilestone{Completed Turrellian RGB LED}{25}\\\\
+
+           % Testing equipment
+            \ganttgroup{Scheduled UI and UX testing}{26}{27}\\ %elem0
+            \ganttbar[progress=0]{Data collection}{26}{27}\\
+            \ganttmilestone{Testing completed}{27}\\\\
+	
+	 % Testing equipment
+            \ganttgroup{Dissertation writing}{12}{33}\\ %elem0
+            \ganttmilestone{Ethics application}{10}\\
+            \ganttmilestone{Literature review completed}{20}\\
+            \ganttbar[progress=0]{Data analysis}{27}{28}\\
+            \ganttmilestone{Integration and evaluation of findings}{29}\\
+            \ganttbar[progress=0]{Supervisor redrafting}{30}{31}\\\\
+            \ganttmilestone{Dissertation submission}{32}\\
+
+            %relations 
+            \ganttlink{elem1}{elem4}
+            \ganttlink{elem4}{elem10}
+            \ganttlink{elem7}{elem8}
+            \ganttlink{elem13}{elem14}
+            \ganttlink{elem10}{elem15}
+            \ganttlink{elem15}{elem18}
+            \ganttlink{elem18}{elem21}
+            \ganttlink{elem18}{elem21}
+            \ganttlink{elem23}{elem24}
+            \ganttlink{elem24}{elem25}
+            \ganttlink{elem25}{elem26}
+            \ganttlink{elem26}{elem27}
+            \ganttlink{elem27}{elem28}
+
+
+        \end{ganttchart}
+    \caption{Gantt chart of Turellian RGB LED proposed approach (2020)}
+    \label{fig:Gantt2014}
+    \end{figure}
+\end{landscape}
+
+\end{document}

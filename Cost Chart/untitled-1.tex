@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{makecell,booktabs,array}
+
+\begin{document}
+
+% This construction does not require the array package
+\begin{tabular}{ *{4}{c} }
+  \toprule
+  & \multicolumn{3}{c}{\makecell[c]{Costs incurred sterling (£)}} \\
+  \cmidrule{2-4}
+  \smash{\makecell[cb]{Equipment acquired \\ for project}} & Costs & Compound Cost \\
+  \midrule
+NeoPixel Adafruit LED Strip  & 23.00 & 23.00 &  \\
+Arduino Power Supply & 10.00 & 33.00 &  \\
+TIP10 Darlington Transistors & 5.00 & 38.00 &    \\
+Female DC Power adapter & 4.00 & 42.00 &   \\
+74AHCT125 Quad Level-Shifter & 3.00 & 45.00 &   \\
+Sensor Modules Kit & 27.00 & 72.00 & \\
+Raspberry Pi Starter Kit & 80.00 & 152.00 & \\
+Arceli M5 Stack ESP32 & 45.00 & 197.00 & \\
+DollaTek M5 Stick ESP32 & 21.00 & 218.00 & \\
+Unit Kit - Hat ENV Human Body Induction Sensor & 12.00 & 230.00 & \\
+PROJECTED TOTAL COST & & 300.00 \\
+  \bottomrule
+\end{tabular}
+\end{document}

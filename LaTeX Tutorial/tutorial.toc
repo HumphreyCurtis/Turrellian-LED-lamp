@@ -1,0 +1,6 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Chapter Name}{iii}%
+\contentsline {section}{\numberline {1.1}A Section}{iv}%
+\contentsline {section}{\numberline {1.2}Smoothie Recipe}{vi}%
+\contentsline {section}{\numberline {1.3}Smoothie}{vi}%
+\contentsline {section}{\numberline {1.4}Perfect Meal Recipe}{vii}%

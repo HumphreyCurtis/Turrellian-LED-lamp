@@ -1,0 +1,70 @@
+
+"Machine learning (ML) in mental health - can ML be applied to improve mental health treatment, mood disorders and support the design of devices or spaces? Evidence from developing a mood-enhanced 'Turrell' inspired light display." 
+
+
+What?
+
+Design of a device (light box) which emits wide spectrum of light within a room or setting - helping the user with his or her mood, promoting positive mental well-being and a comfortable environment or setting.
+
+The device is designed to opearte and function with minimal user input - hopeful for the device to operate seemlessly and independently thus helping users subconscious well-being day-to-day. 
+
+Influenced by the works of artist and architect James Turrell. 
+
+Discussion of the present application of machine learning in mental health and design of mental health devices - including thorough literature review. 
+
+Device controlled by a ML algorithim - which operates off user entry, text entry and potentially verbal spoken language cues. 
+
+
+Why?
+
+Approximately 1 in 4 people in the UK experience a mental health problem each year. Consequently, there is an urgent need for action and the development of devices to help treat and support individuals facing mental health problems. 
+
+Mental health treatment is strongly geared towards prescribed drugs and medication. This device offers an alternative form of treatment to improve mood, thereby enabling individuals to utilise this device as an everyday therapy tool - to complement and/or avoid using harsh drugs and medications. 
+
+Markets have seen a number of light devices created to treat seasonal affective disorder (SAD) - yet at present there is nothing for mood disorders. Equally the device can be honed to produce dim lighting and bright lighting to improve healthy sleep habits for those facing difficulties sleeping. 
+
+There is growing scientfic evidence from a number of research papers of the role lighting plays light therapy in improving overall mental wellbeing and for treating mood disorders. (See Related Works)
+
+It will be important to evaluate the effectiveness of both the device and of ML to help with individuals facing mental health problems.
+
+In the US, meditation has become the fastest growing health trend over the last 5 years - this device can certainly be used as a meditation tool or to contribute towards users' mindful habits and affirm good daily routines.
+
+Equally this device can be used commercially by mental health practitioners, meditation instructors etc. to help promote a calming and relaxing setting with ease for there clients. 
+
+
+How & difficulties to be tackled?
+
+Will need to devise an algorithim (have found a couple of useful libraries - see related works), which connect words with certain emotions (eg. terrible = sad & wonderful = happy). 
+
+Equally will have to determine the correct lighting/hues/colours to promote healthy emotions - may want to enable the user to customise (eg. orange light = creativity, yellow=happiness, green/dark blue light = calming, dim light = more melatonin). There are numerous papers written on this. 
+
+Design of a light emitting box - controlled by a microcontroller - will need to figure out how to scale the project, how impressive and/or big the device should be to enable an immersive light experience - this will also cost money. 
+
+Unsure of hardware design - what is aesthetically desirable / most effective from an engineering perspective.
+
+Will need to consult with light specialists and/or individuals more knowledgeable about machine learning and if I can make the devise responsive to verbal (oral) speaking cues. 
+
+Definitely need particpants to try, test and experience the device - gaining there feedback: both positive and negative for academic evaluation.
+
+Will need to make some sort of controller for the device or have it operate via a computer / app. 
+
+
+Extra notes
+
+As a species we are heliotropic - light is an integral form of our human nature. 
+
+We have a primal relationship with light and drink light through the skin as vitamin D. 
+
+Light has been demostrated as a strong medium for emotional experience: https://www.tcpi.com/psychological-impact-light-color/
+
+Pan-religious and spiritual - meaning of the light inside.
+ 
+Encouarage a slowing down and filtering out of the noise (meditation) - focusing of senses.
+
+
+Related Works 
+
+
+
+
+
