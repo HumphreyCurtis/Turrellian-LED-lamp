@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="MQTT-client.js"></script>
+</head>
+<body>
+
+<h1>Online Food Order</h1>
+<h3>Complete here:</h3>
+
+<form id="frm1" action="">
+  Order ID: <input type="text" name="order_id" value="Generated at submission"><br>
+  Order Status: <input type="text" name="order_status" value="open"><br>
+	Delivery ID: <input type="text" name="delivery_id" value="Generated at submission"><br>
+	Delivery Name: <input type="text" name="delivery_name" value="John Doe"><br>
+	Delivery Address: <input type="text" name="delivery_address" value="1 Cathedral Square, BS13DL"><br>
+	Delivery Coordinates: <input type="text" name="delivery_coordinates" value="51.454514,-2587910"><br>
+	Restaurant ID: <input type="text" name="restaurant_id" value="R2837843"><br>
+	Restaurant Name: <input type="text" name="restaurant_name" value="Nando's Park Street"><br>
+	Restaurant Coorindates: <input type="text" name="restaurant_coordinates" value="51.454514,-2587910"><br>
+	Order Items: <input type="text" name="order_items" value="Half Chicken and Chips w/ Haloumi"><br>
+	Order Total: <input type="text" name="order_total" value="8.30"><br>
+	Order Currency: <input type="text" name="order_currency" value="GBP"><br>
+	Order PlacedAt: <input type="text" name="order_placed" value="2020-02-30T08:35:30.0108Z"><br><br>
+</form>
+
+<form action="http://www.hivemq.com/demos/websocket-client/" method="get" target="_blank">
+				<button type="submit">Open MQTT websocket client</button>
+		 </form>
+
+<p>Click "Place Order" to confirm and send your order to the restaurant.</p>
+
+<button onclick="placeOrder()">Place Order</button>
+<p>Order status:</p<b><p id="status"></p></b>
+<p>Below is a JSON payload submitted via MQTT:</p>
+<p id="order"></p>
+
+<table>
+    <tr>
+        <th>order_id</th>
+        <th>status</th>
+        <th>delivery_address</th>
+    </tr>
+</table>
+
+</body>
+</html>
