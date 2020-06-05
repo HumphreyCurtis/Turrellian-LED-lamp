@@ -1,7 +1,7 @@
 // NeoPixel Ring simple sketch (c) 2013 Shae Erisson
 // Released under the GPLv3 license to match the rest of the
 // Adafruit NeoPixel library
-
+#include <M5Stack.h>
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
  #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
