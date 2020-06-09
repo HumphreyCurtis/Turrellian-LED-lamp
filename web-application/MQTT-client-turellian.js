@@ -17,7 +17,7 @@ function sendMood() {
     var newMood = {
 
         mood_id: "O" + makeid(7),
-        current_mood: x.elements[3].value, 
+        current_mood: x.elements[1].value, 
         desired_mood: x.elements[5].value
         // order_status: x.elements[1].value,
         // delivery_id: "D" + makeid(7),
@@ -38,7 +38,6 @@ function sendMood() {
     };
 
     document.getElementById("mood").innerHTML = JSON.stringify(newMood);
-    // document.getElementById("status").innerHTML = newOrder.order_status;
     onSubmit(JSON.stringify(newMood));
 }
 
@@ -52,14 +51,14 @@ function onSubmit(payload) {
     client.send(message);
 }
 
-function updateTable(payload) {
-    var tr;
-    tr = $('<tr/>');
-    tr.append("<td>" + json[0].mood_id + "</td>");
-    tr.append("<td>" + json[1].current_mood + "</td>");
-    tr.append("<td>" + json[4].desired_mood + "</td>");
-    $('table').append(tr);
-}
+// function updateTable(payload) {
+//     var tr;
+//     tr = $('<tr/>');
+//     tr.append("<td>" + json[0].mood_id + "</td>");
+//     tr.append("<td>" + json[1].current_mood + "</td>");
+//     tr.append("<td>" + json[4].desired_mood + "</td>");
+//     $('table').append(tr);
+// }
 
 // called when the client connects
 function onConnect() {
