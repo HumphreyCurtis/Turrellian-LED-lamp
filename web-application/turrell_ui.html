@@ -6,13 +6,20 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="MQTT-client-turellian.js"></script>
+    <link rel="stylesheet" href="turrell_ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Turrellian LED Application</h1>
+    <h1>Turrellian LED Prototype App</h1>
+
+    <img src="Turrellian_LED_logo.png" alt="logo">
+
     <h3>Lets pause and reflect on your day so far.</h3>
-    <h3>Don't forget to breathe deeply whilst reflecting.</h3>
+    <h3>Don't forget to breathe deeply whilst reflecting!</h3>
+
+
 
     <form id="frm1" action="">
         <p>
@@ -20,18 +27,18 @@
         </p>
         <p>
             <br>
-            <label>Please rate your day so far: </label>
+            <label>1. Please rate your day so far: </label>
             <select id="my_day">
-                <option value="terrible">Really terrible</option>
-                <option value="bad">Somewhat bad</option>
-                <option value="okay">Completely okay</option>
                 <option value="good">Pretty good</option>
                 <option value="awesome">Absolutely awesome</option>
+                <option value="okay">Completely okay</option>
+                <option value="terrible">Really terrible</option>
+                <option value="bad">Somewhat bad</option>
             </select>
             <br>
         </p>
         <p>
-            <label>What made your day this way?</label>
+            <label>2. What made your day this way?</label>
             <select id="causes">
                 <option value="1">Work</option>
                 <option value="2">Family</option>
@@ -44,7 +51,7 @@
             <br>
         </p>
         <p>
-            <label>What was the overriding emotion throughout the day?</label>
+            <label>3. What was the overriding emotion throughout the day?</label>
             <select id="mood_emotions">
                 <option value="1">Tense</option>
                 <option value="2">Nervous</option>
@@ -61,12 +68,12 @@
             </select>
             <br>
         </p>
-        Would you like to elaborate on what happened? <br>
+        4. Would you like to elaborate on what happened? <br>
         <p>
-            <textarea id="elaboration" rows="10" cols="50"></textarea>
+            <textarea id="elaboration" rows="5" cols="50" placeholder="Add your thoughts here..."></textarea>
         </p>
         <p>
-            <label>In the present moment, how would you like to feel?</label>
+            <label>5. In the present moment, how would you like to feel?</label>
             <select id="mood_positive_emotions">
                 <option value="focused">Focused</option>
                 <option value="excited">Excited</option>
@@ -77,6 +84,11 @@
             </select>
             <br>
         </p>
+        6. State three things you are currently grateful for:<br>
+        <p>
+            <textarea id="elaboration" rows="5" cols="50" placeholder="Add your thoughts here..."></textarea>
+        </p>
+
     </form>
 
     <p>Click "Send mood" to confirm and send your mood to orient the LED.</p>
@@ -96,7 +108,7 @@
         </table>
         <p>
             <form action="http://www.hivemq.com/demos/websocket-client/" method="get" target="_blank">
-                <button type="submit">Open MQTT websocket client</button>
+                <button type="submit" id="button2">Open MQTT websocket client</button>
             </form>
         </p>
 
