@@ -12,29 +12,12 @@ client.connect({
 
 function sendMood() {
     var x = document.getElementById("frm1");
-    //   var text = "";
 
     var newMood = {
 
         mood_id: "O" + makeid(7),
         current_mood: x.elements[1].value, 
         desired_mood: x.elements[5].value
-        // order_status: x.elements[1].value,
-        // delivery_id: "D" + makeid(7),
-        // delivery: {
-        //     delivery_name: x.elements[3].value,
-        //     delivery_address: x.elements[4].value,
-        //     delivery_coordinates: x.elements[5].value
-        // },
-        // restaurant: {
-        //     restaurant_id: x.elements[6].value,
-        //     restaurant_name: x.elements[7].value,
-        //     restaurant_coordinates: x.elements[8].value
-        // },
-        // order_items: x.elements[9].value,
-        // order_total: x.elements[10].value,
-        // order_currency: x.elements[11].value,
-        // order_placed: x.elements[12].value
     };
 
     document.getElementById("mood").innerHTML = JSON.stringify(newMood);
@@ -50,15 +33,6 @@ function onSubmit(payload) {
     message.destinationName = "james_turrell";
     client.send(message);
 }
-
-// function updateTable(payload) {
-//     var tr;
-//     tr = $('<tr/>');
-//     tr.append("<td>" + json[0].mood_id + "</td>");
-//     tr.append("<td>" + json[1].current_mood + "</td>");
-//     tr.append("<td>" + json[4].desired_mood + "</td>");
-//     $('table').append(tr);
-// }
 
 // called when the client connects
 function onConnect() {
